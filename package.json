@@ -1,0 +1,41 @@
+{
+  "name": "weather_forecasts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "prettier . --check && eslint .",
+    "lint:fix": "prettier . --write && eslint . --fix",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenisVelinen/weather_forecasts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DenisVelinen/weather_forecasts/issues"
+  },
+  "homepage": "https://github.com/DenisVelinen/weather_forecasts#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.3.1",
+    "eslint": "^8.31.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-jest": "^27.2.0",
+    "husky": "^8.0.3",
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.1"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
+}
